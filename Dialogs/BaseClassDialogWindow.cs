@@ -20,8 +20,8 @@ namespace UnrealContextMenu
         public BaseClassDialogWindow(Dictionary<string, ClassInfo> classHierarchy)
         {
             Title = "My Dialog";
-//             Width = 400;
-//             Height = 300;
+            Width = 600;
+            Height = 400;
             WindowStartupLocation = WindowStartupLocation.CenterScreen;
 
             BaseClassDialog = new BaseClassDialog(classHierarchy);
