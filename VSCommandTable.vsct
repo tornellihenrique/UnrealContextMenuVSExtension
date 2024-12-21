@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Include href="KnownImageIds.vsct"/>
+  <Include href="VSGlobals.vsct"/>
+
+  <Commands package="UnrealContextMenu">
+	<Groups>
+		<Group guid="UnrealContextMenu" id="MyCommandGroup" priority="0x0600">
+			<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_FOLDERNODE" />
+		</Group>
+	</Groups>
+	<Buttons>
+		<Button guid="UnrealContextMenu" id="AddUnrealClass" priority="0x0100" type="Button">
+			<Parent guid="UnrealContextMenu" id="MyCommandGroup" />
+			<Icon guid="ImageCatalogGuid" id="AddClass" />
+			<CommandFlag>IconIsMoniker</CommandFlag>
+			<Strings>
+				<ButtonText>Add Unreal Class</ButtonText>
+				<LocCanonicalName>.UnrealContextMenu.AddUnrealClass</LocCanonicalName>
+			</Strings>
+		</Button>
+	</Buttons>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="UnrealContextMenu" value="{3691719c-ed82-45ba-b3a8-5959b6dbfae5}">
+		<IDSymbol name="MyCommandGroup" value="0x0001" />
+		<IDSymbol name="AddUnrealClass" value="0x0100" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
